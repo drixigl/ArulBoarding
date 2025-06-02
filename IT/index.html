@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arul Boading</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka&family=Chewy&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header with dropdown -->
+  <header class="custom-header" id="mainHeader">
+    <div class="menu-container">
+      <button class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>      
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-inner">
+      <h1 class="logo" id="animatedLogo">ARUL BOARDING</h1>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-text">
+      <h2>WHERE PURPOSE MEETS PEACE</h2>
+      <p>May there be peace within your walls and security within your citadels.</p>
+      <a href="#contact" class="book-now-btn">Book Now</a>
+      <div class="hero-text">
+      </div>
+      
+    </div>
+  </section>
+
+<!-- Floating Availability Form -->
+<div class="availability-wrapper">
+  <div class="availability-box">
+    <form action="availability.html" method="GET" class="availability-form">
+      <div class="form-row">
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin" name="checkin" required />
+      </div>
+      <div class="form-row">
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout" name="checkout" required />
+      </div>
+      <div class="form-row">
+        <label for="students">Students</label>
+        <input type="number" id="students" name="students" min="1" required />
+      </div>
+      <div class="form-row">
+        <label for="rooms">Rooms</label>
+        <input type="number" id="rooms" name="rooms" min="1" required />
+      </div>
+      <button type="submit" class="check-btn">Check Availability</button>
+    </form>
+  </div>
+</div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h3 class="morph-letter" id="morph-letter-text" tyle="margin-top: 150px;"></h3>
+        <p>Comfort, culture, and community — welcome to Arul Boarding. Experience hospitality rooted in tradition and care.</p>
+      </div>
+      <div class="about-image">
+        <img src="/images/gALLERY/11.jpg" alt="About Photo">
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Carousel Gallery Section -->
+  <div class="carousel">
+    <div class="carousel-track" id="carousel-track">
+      <div class="card"><img src="/images/gALLERY/12.jpg" alt=""><div class="card-title"></div></div>
+      <div class="card"><img src="/images/gALLERY/19.jpeg" alt=""><div class="card-title"></div></div>
+      <div class="card"><img src="/images/gALLERY/110.jpeg" alt=""><div class="card-title"></div></div>
+      <div class="card"><img src="/images/gALLERY/113.jpeg" alt=""><div class="card-title"></div></div>
+      <div class="card"><img src="/images/gALLERY/114.jpeg" alt=""><div class="card-title"></div></div>
+    </div>
+    <div class="nav-arrows">
+      <button onclick="moveSlide(-1)">&#10094;</button>
+      <button onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+  
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>We’d love to welcome you in person.</p>
+        <ul>
+          <li><strong>📍 Address:</strong> 32/5 Parameshwara College lane, Thirunelveli Jaffna 40000</li>
+          <li><strong>📞 Phone:</strong> +94 777 354 753</li>
+          <li><strong>✉️ Email:</strong> mlarul1980@Gmail.com</li>
+        </ul>
+      </div>
+      <div class="map-container">
+        <a href="https://www.google.com/maps/place/Arul+boarding/@9.6860731,80.0242716,17z/data=!3m1!4b1!4m6!3m5!1s0x3afe552bbd406ecf:0x2815030ed34d428f!8m2!3d9.6860731!4d80.0242716!16s%2Fg%2F11vf302frx?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link" title="View on Google Maps">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.9410452551465!2d80.02427159999999!3d9.6860731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe552bbd406ecf%3A0x2815030ed34d428f!2sArul%20boarding!5e0!3m2!1sen!2slk!4v1748844932483!5m2!1sen!2slk" 
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 1rem;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <h3>Arul Boarding</h3>
+        <p>© 2025 Arul Boarding. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- Scripts -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      // Fade in hero
+      document.querySelector(".hero-section").classList.add("visible");
+
+      const toggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("dropdownMenu");
+
+      toggle.addEventListener("click", () => {
+  const isOpen = menu.style.display === "block";
+  menu.style.display = isOpen ? "none" : "block";
+  toggle.classList.toggle("active"); // Animate the button
+});
+
+      document.addEventListener("click", (e) => {
+        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+          menu.style.display = "none";
+        }
+      });
+    });
+
+    // Header fade effect on scroll
+    const header = document.getElementById("mainHeader");
+    window.addEventListener("scroll", () => {
+      header.style.opacity = window.scrollY > 50 ? "0.85" : "1";
+      header.style.transition = "opacity 0.3s ease";
+    });
+  </script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const heroText = document.querySelector(".hero-text");
+  
+      // Fade in on load
+      setTimeout(() => {
+        heroText.classList.add("visible");
+      }, 200);
+  
+      // Fade out on scroll
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 100) {
+          heroText.classList.add("faded-out");
+        } else {
+          heroText.classList.remove("faded-out");
+        }
+      });
+    });
+  </script>
+ <script>
+  const element = document.getElementById("morph-letter-text");
+
+  const sequences = [
+    "Home and school",      // Sinhala
+    "Build your future.",     // Tamil
+    "ARUL BOARDING"       // English
+  ];
+
+  let hasAnimated = false;
+
+  function morphLetters() {
+    if (hasAnimated) return;
+    hasAnimated = true;
+
+    let i = 0;
+
+    function updateText(targetText) {
+      const letters = targetText.split("");
+      element.innerHTML = ""; // Clear
+
+      letters.forEach((letter, idx) => {
+        const span = document.createElement("span");
+        span.textContent = letter;
+        span.style.opacity = "0";
+        span.style.transform = "scale(0.5)";
+        element.appendChild(span);
+
+        // Animate each letter individually
+        setTimeout(() => {
+          span.style.opacity = "1";
+          span.style.transform = "scale(1)";
+        }, idx * 100);
+      });
+    }
+
+    element.classList.add("visible");
+
+    updateText(sequences[0]);
+
+    const interval = setInterval(() => {
+      i++;
+      if (i < sequences.length) {
+        updateText(sequences[i]);
+      } else {
+        clearInterval(interval); // Stop after final
+      }
+    }, 2000);
+  }
+
+  // Scroll trigger
+  window.addEventListener("scroll", () => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      morphLetters();
+    }
+  });
+</script>
+
+<script>
+  const track = document.getElementById("carousel-track");
+  let index = 0;
+  let slideInterval;
+
+  function moveSlide(step) {
+    const cards = document.querySelectorAll(".card");
+    const visible = 3;
+    const cardWidth = cards[0].offsetWidth + 20; // 20px gap/margin
+    const maxIndex = cards.length - visible;
+
+    index += step;
+    if (index < 0) index = 0;
+    if (index > maxIndex) index = 0; // Loop to start
+
+    track.style.transition = "transform 0.5s ease-in-out";
+    track.style.transform = `translateX(-${cardWidth * index}px)`;
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(() => moveSlide(1), 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(slideInterval);
+  }
+
+  // Auto-slide
+  startAutoSlide();
+
+  // Pause on hover
+  const carousel = document.querySelector(".carousel");
+  carousel.addEventListener("mouseenter", stopAutoSlide);
+  carousel.addEventListener("mouseleave", startAutoSlide);
+
+  // Recalculate on resize (responsive)
+  window.addEventListener("resize", () => {
+    moveSlide(0); // Refresh position
+  });
+</script>
+
+
+
+
+
+  
+</body>
+</html>
